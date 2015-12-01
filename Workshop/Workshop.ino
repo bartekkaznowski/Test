@@ -40,7 +40,7 @@ void DrawScreen(void) {
     DrawTime(clock.GetTime()); // Draws the time returned from the clock
     DrawDate(clock.GetDate()); // Draws the date returned from the clock
     DrawTemperature(clock.GetTemperature()); // Draws the temperature returned from the clock
-    // DrawImages(); // Draws the images to the screen
+    DrawImages(); // Draws the images to the screen. Comment out to hide images.
     DrawBatteryStatus();
   }
   while ( u8g.nextPage() );
